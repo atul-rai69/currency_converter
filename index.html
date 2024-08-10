@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2><u>Currency converter</u></h1>
+        <form>
+            <div class="amount">
+                <label for="value">Enter Amount</label>
+                <input id="value" name="value" value="1" type="text"/>
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p><b>From</b></p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from" id="currency_from">
+                            
+                        </select>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                </svg>
+                <div class="to">
+                    <p><b>To</b></p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" id="currency_to">
+                            
+                        </select>
+                    </div>                    
+                </div>
+            </div>
+            <div class="msg" id="msg">
+                1 USD = 80 INR
+            </div>
+            <button>get exchange rate</button>
+        </form>
+    </div>
+<script src="code.js"></script>
+<script src="index.js"></script>   
+ 
+</body>
+</html>
